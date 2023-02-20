@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.dsiblue{
+    background-color: #11417D;
+}
+.dsigreen{
+    background-color: #47A18B;
+}
+.dsiorange{
+    background-color: #FD8A69;
+}
+.dsigrey{
+    background-color: #989999;
+}
+
 /********************************************************************************************************
 **************************************** HEADER *********************************************************
 ********************************************************************************************************/
@@ -147,7 +160,7 @@ header p{
 **************************************** BANNIERE *********************************************************
 ********************************************************************************************************/
 .banniere{
-    background-color: #11417D;
+    background: linear-gradient(#11417D, #11427D5D);
 }
 .presentation {
     display: flex;
@@ -168,5 +181,71 @@ header p{
 /********************************************************************************************************
 **************************************** CARTES *********************************************************
 ********************************************************************************************************/
+.sectionCard{
+    background-color: #D1D6DA;
+}
+.allcards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 18%;
+    height: 200px;
+    border-radius: 10px;
+}
+.titleCenter{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleCenter h2{
+    font-family: 'Audiowide', sans-serif;
+}
 
-.cartes{}
+/********************************************************************************************************
+**************************************** CHARTS *********************************************************
+********************************************************************************************************/
+.charts{
+    background-color: #D1D6DA;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.charts img{
+    width: 90%;
+}
+
+/********************************************************************************************************
+**************************************** FOOTER *********************************************************
+********************************************************************************************************/
+
+footer{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11417D;
+    color: white;
+}
+#verticalBar{
+    height: 200px;
+    border-right: 5px solid white;
+}
+footer #contact h3{
+    text-decoration: underline;
+}
