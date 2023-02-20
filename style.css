@@ -247,10 +247,14 @@ footer{
 }
 #verticalBar{
     height: 200px;
-    border-right: 5px solid white;
+    border-right: 3px solid white;
 }
 #contact {
     width: 40%;
+}
+#contact a{
+    color: white;
+    text-decoration: underline;
 }
 footer #contact h3{
     text-decoration: underline;
@@ -284,13 +288,14 @@ footer #contact h3{
     width: 40%;
     padding: 20px;
     margin: auto;
-    background-color: #11417D;
+    background: linear-gradient(#4a88d4, #11417D);
     border-radius: 10px;
     box-shadow: 10px 10px 10px #456a98;
 }
 .champ {
     height: 30px;
     width: 100%;
+    border-radius: 5px;
 }
 .btnSend{
     height: 50px;
@@ -298,4 +303,5 @@ footer #contact h3{
     background-color: #FD8A69;
     border: 1px solid white;
     border-radius: 5px;
+    col
 }
