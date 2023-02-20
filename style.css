@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+********************************************************************************************************
+**************************************** HEADER *********************************************************
+********************************************************************************************************
+a{
+    text-decoration: none;
+}
+p{
+    font-size: small;
+}
+
+.logo{
+    padding-left: 10px;
+}
+
+.logo a{
+    color: #fafafa;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.logo a span{
+    color: #f6c45C;
+    font-size: 1.6em;
+}
+
+.navbar{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #D2DBE2;
+    /* mix-blend-mode: exclusion; */
+}
+
+.desktop, .mobile{
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+}
+nav ul li a{
+    color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h1 span:nth-child(1){
+    color: #3dc1cd;
+}
+h1 span:nth-child(2){
+    color: #f69536;
+}
+
+header p{
+    color: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 65%;
+    line-height: 150%;
+
+}.mobile{
+    display: none;
+}
+
+.boxHeader{
+    margin: auto;
+    padding-top: 100px;
+    color: white;
+    min-width: 280px;
+    max-width: 670px;
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.burger {
+    margin-top: 10px;
+    display: none;
+}
+
+#checkBurger, .menuBurger {
+    visibility: hidden;
+}
+
+.menuBurger {
+    margin-top: 15px;
+    position: absolute;
+}
+.menuBurger ul li {
+    list-style-type: none;
+}
+.menuBurger ul li a{
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+    .mobile, .burger {
+        /* visibility: visible; */
+        display: block;
+    }
+    .burger{
+        background: rgba(255, 255, 255, 0.8);
+        padding: 5px;
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+    .mobile div:last-child{
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .mobile input:checked ~ .menuBurger{
+        /* height: auto; */
+        visibility: visible;
+        /* display: none; */
+        /* justify-content: flex-end;
+        align-items: flex-end; */
+    }
+}
+
+********************************************************************************************************
+**************************************** BANNIERE *********************************************************
+********************************************************************************************************
+
