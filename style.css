@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 .dsiblue{
     background-color: #11417D;
@@ -237,15 +240,62 @@ footer{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #11417D;
+    background: linear-gradient(#11427D5D, #11417D);
     color: white;
 }
 #verticalBar{
     height: 200px;
     border-right: 5px solid white;
 }
+#contact {
+    width: 40%;
+}
 footer #contact h3{
     text-decoration: underline;
+}
+.adresse{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.icon{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allicon{
+    display: flex;
+}
+.allicon div{
+    margin: auto;
+    margin: 10px;
+}
+.social{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: whitesmoke;
+    color: black;
+}
+#formulaire{
+    width: 40%;
+    padding: 20px;
+    margin: auto;
+    background-color: #11417D;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #456a98;
+}
+.champ {
+    height: 30px;
+    width: 100%;
+}
+.btnSend{
+    height: 50px;
+    width: 100%;
+    background-color: #FD8A69;
+    border: 1px solid white;
+    border-radius: 5px;
 }

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -101,15 +103,38 @@
     <footer>
         <div id="contact">
             <h3>CONTACTEZ NOUS</h3>
-            <p>80 Route des Lucioles</p>
-            <p>Les Espaces de Sophia</p>
-            <p>Batiment K</p>
-            <p>06560</p>
+            <div class="adresse">
+                <p>80 Route des Lucioles</p>
+                <p>Les Espaces de Sophia</p>
+                <p>Batiment K</p>
+                <p>06560</p>
+            </div>
             <p>Tél: 05 62 74 10 00</p>
             <a href="#">accuiel@dsi-ap.com</a>
+            <div class="allicon">
+                <div class="social icon">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                </div>
+                <div class="social icon">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                </div>
+                <div class="social icon">
+                    <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                </div>
+            </div>
         </div>
         <div id="verticalBar"></div>
-        <div id="formulaire"></div>
+        <div id="formulaire">
+            <form action="/action.php">
+                <label for="fname">Nom Prénom:</label><br>
+                <input class="champ" type="text" id="fname" name="fname" value="John"><br><br>
+                <label for="lname">Entreprise:</label><br>
+                <input class="champ" type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label for="lname">Email:</label><br>
+                <input class="champ" type="text" id="lname" name="lname" value="Doe"><br><br><br>
+                <input class="btnSend" type="submit" value="Envoyer">
+            </form>
+        </div>
     </footer>
 </body>
 
