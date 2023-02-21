@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -68,8 +66,13 @@ nav ul li{
     margin-left: 20px;
 }
 nav ul li a{
-    color: black;
+    color: rgb(89, 89, 89);
 }
+nav a:hover {
+    background-color: #989999;
+    color: rgb(241, 235, 235);
+    padding: 10px;
+  }
 
 h1{
     color: white;
@@ -174,17 +177,20 @@ header p{
 }
 #textLeft{
     width:40%;
+    text-align: center;
 }
 #textLeft h1{
-    font-size: 64px;
-    font-family: 'Audiowide', sans-serif;
+    font-size: 56px;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 20px;
 }
 #textLeft p{
-    font-size: 29px;
-    color: white
+    font-size: 24px;
+    color: white;
 }
 #textLeft span{
     color: #FD8A69;
+    font-family: 'Audiowide', cursive;
 }
 .presentation #imageRight {
     width:50%;
@@ -200,20 +206,25 @@ header p{
     background-color: #D1D6DA;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 2vw;
 }
 .allcards{
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
+    text-shadow: 2px 2px 1px #42454a;
 }
 .card{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 18%;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px #333434;
 }
@@ -232,7 +243,7 @@ header p{
 }
 .titleCenter h2{
     font-family: 'Audiowide', sans-serif;
-    font-size: 36px;
+    font-size: 4vw;
 }
 
 /********************************************************************************************************
@@ -252,6 +263,7 @@ header p{
 **************************************** FOOTER *********************************************************
 ********************************************************************************************************/
 
+/**************************************** Adresse ******************************************************/
 footer{
     padding: 20px;
     display: flex;
@@ -265,6 +277,7 @@ footer{
     height: 200px;
     border-right: 3px solid white;
 }
+/**************************************** Contact ******************************************************/
 #contact {
     width: 40%;
     padding: 20px;
@@ -274,7 +287,10 @@ footer{
     font-weight: bolder;
 }
 .adresse p, #contact p{
-    font-size: 28px;
+    font-size: 20px;
+}
+.tel{
+    padding: 10px 0px;
 }
 #contact a{
     color: white;
@@ -287,6 +303,7 @@ footer #contact h3{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/**************************************** social icon ******************************************************/
 .icon{
     margin: auto;
     text-align: center;
@@ -310,6 +327,7 @@ footer #contact h3{
     background-color: whitesmoke;
     color: #11417D;
 }
+/**************************************** Formulaire ******************************************************/
 #formulaire{
     width: 40%;
     padding: 20px;
