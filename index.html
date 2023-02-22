@@ -30,11 +30,11 @@
                 </ul>
             </nav>
             <label class="mobile">
-                <input type="checkbox" name="" id="checkBurger">
-                <div class="burger">
+                <input type="checkbox" name="menu_burger" id="checkBurger">
+                <span class="burger">
                     <i class="fa-solid fa-bars fa-2x"></i>
-                </div>
-                <div class="menuBurger">
+                </span>
+                <span class="menuBurger">
                     <ul>
                         <li><a href="#">NOS SENSIBILISATIONS</a></li>
                         <!-- <li><a href="#">NOUS RECRUTONS</a></li> -->
@@ -44,7 +44,7 @@
                         <li><a href="#">ACTUALITÉS</a></li>
                         <li><a href="#">NOUS CONTACTER</a></li>
                     </ul>
-                </div>
+                </span>
             </label>
         </div>
     </header>
@@ -104,8 +104,8 @@
         </div>
     </div>
     <div class="charts">
-        <img class="desktopImg" src="img/charts.jpg" alt="diagramme de DSI" srcset="" media="(min-width: 600px)">
-        <img class="mobileImg" src="img/charts_mobile.jpg" alt="diagramme de DSI" srcset="" media="(max-width: 600px)">
+        <img class="desktopImg" src="img/charts.jpg" alt="diagramme de DSI" media="(min-width: 600px)">
+        <img class="mobileImg" src="img/charts_mobile.jpg" alt="diagramme de DSI" media="(max-width: 600px)">
     </div>
 <!--*******************************************************************************************************
 **************************************** FOOTER *********************************************************
@@ -137,11 +137,11 @@
         <div id="formulaire">
             <form action="/action.php">
                 <label for="fname">Nom Prénom:</label><br>
-                <input class="champ" type="text" id="name" name="name" value=""><br><br>
+                <input class="champ" type="text" id="fname" name="name" value=""><br><br>
                 <label for="lname">Entreprise:</label><br>
-                <input class="champ" type="text" id="enterprise" name="enterprise" value=""><br><br>
-                <label for="lname">Email:</label><br>
-                <input class="champ" type="text" id="mail" name="mail" value=""><br><br><br>
+                <input class="champ" type="text" id="lname" name="enterprise" value=""><br><br>
+                <label for="lemail">Email:</label><br>
+                <input class="champ" type="text" id="lemail" name="mail" value=""><br><br><br>
                 <input class="btnSend" type="submit" value="Envoyer">
             </form>
         </div>
