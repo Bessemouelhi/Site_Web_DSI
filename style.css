@@ -344,10 +344,20 @@ header p {
 .charts img {
     width: 90%;
 }
+.mobileImg{
+    display: none;
+    margin: auto;
+}
 
 @media screen and (max-width: 600px) {
     .charts {
         background-color: white;
+    }
+    .desktopImg{
+        display: none;
+    }
+    .mobileImg{
+        display: block;
     }
 }
 
