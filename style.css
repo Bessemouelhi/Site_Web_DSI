@@ -136,8 +136,9 @@ header p {
     margin-top: 15px;
 }
 
-.menuBurger ul li {
+.menuBurger li {
     list-style-type: none;
+    padding-bottom: 10px;
 }
 
 .menuBurger ul li a {
@@ -188,12 +189,8 @@ header p {
         background: rgba(255, 255, 255, 0.8);
     }
 
-    .mobile input:checked~.menuBurger {
-        /* height: auto; */
+    #checkBurger:checked~.menuBurger {
         visibility: visible;
-        /* display: none; */
-        /* justify-content: flex-end;
-        align-items: flex-end; */
     }
 }
 
