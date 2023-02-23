@@ -146,6 +146,7 @@ header p {
 
     .menuBurger {
         position: fixed;
+        margin-top: 50px;
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.8);
     }
@@ -173,7 +174,7 @@ header p {
         background: rgba(255, 255, 255, 0.8);
     }
 
-    #checkBurger:checked~.menuBurger {
+    input:checked~.menuBurger {
         visibility: visible;
     }
 }
@@ -231,6 +232,9 @@ header p {
     #textLeft,
     #imageRight {
         margin: auto;
+    }
+    .presentation #imageRight {
+        width: 80%;
     }
 }
 
