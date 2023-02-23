@@ -33,22 +33,6 @@ p {
     font-size: small;
 }
 
-.logo {
-    padding-left: 10px;
-}
-
-.logo a {
-    color: #fafafa;
-    font-family: sans-serif;
-    font-weight: 800;
-    font-size: 1.5em;
-}
-
-.logo a span {
-    color: #f6c45C;
-    font-size: 1.6em;
-}
-
 .navbar {
     text-transform: uppercase;
     display: flex;
