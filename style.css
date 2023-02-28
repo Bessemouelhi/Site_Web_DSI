@@ -109,6 +109,7 @@ header p {
 .burger {
     margin-top: 10px;
     display: none;
+    background-color: #6C757D;
 }
 
 #checkBurger,
@@ -130,6 +131,9 @@ header p {
 }
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        background-color: whitesmoke;
+    }
     .desktop {
         display: none;
     }
@@ -160,9 +164,11 @@ header p {
     }
 
     .burger {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 5px;
-        border-radius: 5px;
+        background: rgba(153, 153, 153, 0.8);
+        color: whitesmoke;
+        padding: 8px;
+        border-radius: 8px;
+        margin-top: 8%;
         display: grid;
         place-items: center;
         position: fixed;
@@ -195,7 +201,7 @@ header p {
 }
 
 #textLeft {
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 
@@ -227,14 +233,17 @@ header p {
 @media screen and (max-width: 600px) {
     .presentation {
         display: block;
+        width: 100%;
     }
 
     #textLeft,
     #imageRight {
         margin: auto;
-    }
-    .presentation #imageRight {
         width: 80%;
+    }
+
+    #textLeft p {
+        margin-bottom: 20px;
     }
 }
 
@@ -257,7 +266,8 @@ header p {
     text-transform: uppercase;
     text-shadow: 2px 2px 1px #42454a;
 }
-.twinCard{
+
+.twinCard {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -337,7 +347,8 @@ header p {
 .charts img {
     width: 90%;
 }
-.mobileImg{
+
+.mobileImg {
     display: none;
     margin: auto;
 }
@@ -346,10 +357,12 @@ header p {
     .charts {
         background-color: white;
     }
-    .desktopImg{
+
+    .desktopImg {
         display: none;
     }
-    .mobileImg{
+
+    .mobileImg {
         display: block;
     }
 }
@@ -386,20 +399,25 @@ footer {
 
 .adresse p,
 #contact p {
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 .tel {
     padding: 10px 0px;
 }
 
+#dsimail {
+    text-decoration: underline;
+}
+
 #contact a {
     color: white;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 footer #contact h3 {
     text-decoration: underline;
+    margin-bottom: 6vw;
 }
 
 .adresse {
@@ -419,9 +437,9 @@ footer #contact h3 {
 
 .allicon {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
+    text-shadow: 0px 0px 0px #11417D;
+
 }
 
 .allicon div {
@@ -429,15 +447,13 @@ footer #contact h3 {
     margin: 10px;
 }
 
-.social i {
+
+.social {
     border-radius: 50%;
     width: 60px;
     height: 60px;
     background-color: whitesmoke;
     color: #11417D;
-}
-.social .icon a {
-    text-decoration: none;
 }
 
 /**************************************** Formulaire ******************************************************/
@@ -471,17 +487,36 @@ footer #contact h3 {
 
     #contact {
         width: 80%;
+        text-align: center;
+    }
+
+    .allicon{
+        display: none;
+    }
+
+    .alliconmobile {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 3em auto;
+    }
+
+    .alliconmobile div {
+        font-size: 0.9em;
+        margin: auto;
+        margin: 10px;
+        text-align: center;
     }
 
     .social {
-        width: 80px;
-        height: 80px;
+        width: 15vw;
+        height: 15vw;
     }
 
     #verticalBar {
         height: 50px;
         border-right: 0px;
-        border-bottom: 3px solid white;
+        /* border-bottom: 3px solid white; */
         margin: auto;
         margin-bottom: 50px;
     }
